@@ -1,0 +1,1189 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/poetic/ember-cli-cordova">ember-cli-cordova (v0.1.0-beta-2)</a>
+</h1>
+<h4>A tool for creating hybrid apps using a combination of ember-cli and cordova </h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-cordova">module ember-cli-cordova</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova._isTargetCordova">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.</span>_isTargetCordova
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.cdvConfig">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.</span>cdvConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.config">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.</span>config
+            <span class="apidocSignatureSpan">(env, config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.contentFor">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.</span>contentFor
+            <span class="apidocSignatureSpan">(type)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.includedCommands">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.</span>includedCommands
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.postBuild">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.</span>postBuild
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.promise">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.</span>promise
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.treeForPublic">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.</span>treeForPublic
+            <span class="apidocSignatureSpan">(tree)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cli-cordova.</span>cordova</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cli-cordova.</span>open</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cli-cordova.</span>prepare</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cli-cordova.</span>promise.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cli-cordova.</span>string</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cli-cordova.</span>name</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-cordova.cordova">module ember-cli-cordova.cordova</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.cordova.run">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.cordova.</span>run
+            <span class="apidocSignatureSpan">(options, rawArgs)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.cordova.validateAndRun">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.cordova.</span>validateAndRun
+            <span class="apidocSignatureSpan">(rawArgs)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cli-cordova.cordova.</span>aliases</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cli-cordova.cordova.</span>allowedCordovaCommands</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cli-cordova.cordova.</span>description</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cli-cordova.cordova.</span>name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cli-cordova.cordova.</span>works</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-cordova.open">module ember-cli-cordova.open</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.open.run">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.open.</span>run
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cli-cordova.open.</span>aliases</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cli-cordova.open.</span>availableOptions</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cli-cordova.open.</span>description</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cli-cordova.open.</span>name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cli-cordova.open.</span>works</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-cordova.prepare">module ember-cli-cordova.prepare</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.prepare.run">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.prepare.</span>run
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cli-cordova.prepare.</span>aliases</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cli-cordova.prepare.</span>description</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cli-cordova.prepare.</span>name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cli-cordova.prepare.</span>works</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-cordova.promise">module ember-cli-cordova.promise</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.promise.promise">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.</span>promise
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.promise.denodeify">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.promise.</span>denodeify
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.promise.filter">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.promise.</span>filter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.promise.hash">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.promise.</span>hash
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.promise.map">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.promise.</span>map
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-cordova.promise.prototype">module ember-cli-cordova.promise.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.promise.prototype.constructor">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.promise.prototype.</span>constructor
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.promise.prototype.filter">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.promise.prototype.</span>filter
+            <span class="apidocSignatureSpan">(mapFn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.promise.prototype.invoke">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.promise.prototype.</span>invoke
+            <span class="apidocSignatureSpan">(method)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.promise.prototype.map">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.promise.prototype.</span>map
+            <span class="apidocSignatureSpan">(mapFn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.promise.prototype.returns">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.promise.prototype.</span>returns
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-cordova.string">module ember-cli-cordova.string</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.string.classify">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.string.</span>classify
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.string.dasherize">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.string.</span>dasherize
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-cordova.string.decamelize">
+            function <span class="apidocSignatureSpan">ember-cli-cordova.string.</span>decamelize
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cli-cordova" id="apidoc.module.ember-cli-cordova">module ember-cli-cordova</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova._isTargetCordova" id="apidoc.element.ember-cli-cordova._isTargetCordova">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.</span>_isTargetCordova
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_isTargetCordova = function () {
+  return !process.env.EMBER_CLI_CORDOVA ||
+    ['0', 'off', 'false', 'no'].indexOf(process.env.EMBER_CLI_CORDOVA.toLowerCase()) === -1;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+_isTargetCordova: function () {
+  return !process.env.EMBER_CLI_CORDOVA ||
+    ['0', 'off', 'false', 'no'].indexOf(process.env.EMBER_CLI_CORDOVA.toLowerCase()) === -
+1;
+},
+
+config: function (env, config) {
+  var conf = {isCordovaBuild: this.<span class="apidocCodeKeywordSpan">_isTargetCordova</span>()};
+  if (conf.isCordovaBuild &amp;&amp; env !== 'test') {
+    if (config.locationType &amp;&amp; config.locationType !== 'hash') {
+      throw new Error('ember-cli-cordova: You must specify the locationType as \'hash\' in your environment.js or
+ rename it to defaultLocationType.');
+    }
+    conf.locationType = 'hash';
+  }
+  else if (!conf.locationType) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.cdvConfig" id="apidoc.element.ember-cli-cordova.cdvConfig">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.</span>cdvConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cdvConfig = function () {
+  return this.project.config(process.env.EMBER_ENV || 'development').cordova;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+cdvConfig: function () {
+  return this.project.config(process.env.EMBER_ENV || 'development').cordova;
+},
+
+postBuild: function () {
+  if (this._isTargetCordova()) {
+    return postBuild(this.project, this.<span class="apidocCodeKeywordSpan">cdvConfig</span>())();
+  }
+  else {
+    return function () {
+    };
+  }
+},
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.config" id="apidoc.element.ember-cli-cordova.config">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.</span>config
+        <span class="apidocSignatureSpan">(env, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">config = function (env, config) {
+  var conf = {isCordovaBuild: this._isTargetCordova()};
+  if (conf.isCordovaBuild &amp;&amp; env !== 'test') {
+    if (config.locationType &amp;&amp; config.locationType !== 'hash') {
+      throw new Error('ember-cli-cordova: You must specify the locationType as \'hash\' in your environment.js or rename it to defaultLocationType
+.');
+    }
+    conf.locationType = 'hash';
+  }
+  else if (!conf.locationType) {
+    conf.locationType = config.defaultLocationType || 'auto';
+  }
+  conf.cordova = defaults(config.cordova || {}, {
+    liveReload: {
+      enabled:  false,
+      platform: 'ios'
+    }
+  });
+  return conf;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+},
+
+includedCommands: function () {
+  return commands;
+},
+
+cdvConfig: function () {
+  return this.project.<span class="apidocCodeKeywordSpan">config</span>(process.env.EMBER_ENV || 'development').cordova
+;
+},
+
+postBuild: function () {
+  if (this._isTargetCordova()) {
+    return postBuild(this.project, this.cdvConfig())();
+  }
+  else {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.contentFor" id="apidoc.element.ember-cli-cordova.contentFor">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.</span>contentFor
+        <span class="apidocSignatureSpan">(type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">contentFor = function (type) {
+  if (this._isTargetCordova() &amp;&amp; type === 'body') {
+    return '&lt;script src="cordova.js"&gt;&lt;/script&gt;';
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.includedCommands" id="apidoc.element.ember-cli-cordova.includedCommands">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.</span>includedCommands
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">includedCommands = function () {
+  return commands;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.postBuild" id="apidoc.element.ember-cli-cordova.postBuild">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.</span>postBuild
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">postBuild = function () {
+  if (this._isTargetCordova()) {
+    return postBuild(this.project, this.cdvConfig())();
+  }
+  else {
+    return function () {
+    };
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.promise" id="apidoc.element.ember-cli-cordova.promise">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.</span>promise
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function PromiseExt() {
+  Promise.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.treeForPublic" id="apidoc.element.ember-cli-cordova.treeForPublic">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.</span>treeForPublic
+        <span class="apidocSignatureSpan">(tree)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">treeForPublic = function (tree) {
+  var config = this.cdvConfig();
+
+  if (this._isTargetCordova() &amp;&amp; config.liveReload.enabled) {
+    if (!config.liveReload.platform) {
+      throw new Error('ember-cli-cordova: You must specify a liveReload.platform in your environment.js');
+    }
+
+    var platformsPath = path.join(this.project.root, 'cordova', 'platforms');
+    var pluginsPath;
+
+    if (config.liveReload.platform === 'ios') {
+      pluginsPath = path.join(platformsPath, 'ios', 'www');
+    }
+    else if (config.liveReload.platform === 'browser') {
+      pluginsPath = path.join(platformsPath, 'browser', 'www');
+    }
+    else if (config.liveReload.platform === 'android') {
+      pluginsPath = path.join(platformsPath, 'android', 'assets', 'www');
+    }
+    else {
+      pluginsPath = path.join(platformsPath, config.liveReload.platform);
+    }
+
+    var files = ['cordova.js', 'cordova_plugins.js'];
+
+    files.forEach(function (file) {
+      var filePath = path.join(pluginsPath, file);
+      if (!fs.existsSync(filePath)) {
+        var err = new Error('ember-cli-cordova: ' + filePath + ' did not exist. It is required for Device LiveReload to work.');
+        err.stack = null;
+        throw err;
+      }
+    });
+
+    if (fs.existsSync(path.join(pluginsPath, 'plugins'))) {
+      files.push('plugins/**');
+    }
+
+    var pluginsTree = new Funnel(this.treeGenerator(pluginsPath), {
+      srcDir:  '/',
+      include: files,
+      destDir: '/'
+    });
+
+    console.log(chalk.green('ember-cli-cordova: Device LiveReload is enabled'));
+
+    return mergeTrees([tree, pluginsTree]);
+  }
+
+  return tree;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cli-cordova.cordova" id="apidoc.module.ember-cli-cordova.cordova">module ember-cli-cordova.cordova</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.cordova.run" id="apidoc.element.ember-cli-cordova.cordova.run">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.cordova.</span>run
+        <span class="apidocSignatureSpan">(options, rawArgs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">run = function (options, rawArgs) {
+  return require('../tasks/cordova')(rawArgs, this.project)();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  works: 'insideProject',
+  allowedCordovaCommands: [
+    'plugin', 'plugins', 'platform', 'platforms', 'run', 'emulate'
+  ],
+
+  validateAndRun: function(rawArgs) {
+    if(this.allowedCordovaCommands.indexOf(rawArgs[0]) &gt; -1) {
+      return this.<span class="apidocCodeKeywordSpan">run</span>({}, rawArgs);
+    }
+  },
+
+  run: function(options, rawArgs) {
+    return require('../tasks/cordova')(rawArgs, this.project)();
+  }
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.cordova.validateAndRun" id="apidoc.element.ember-cli-cordova.cordova.validateAndRun">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.cordova.</span>validateAndRun
+        <span class="apidocSignatureSpan">(rawArgs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validateAndRun = function (rawArgs) {
+  if(this.allowedCordovaCommands.indexOf(rawArgs[0]) &gt; -1) {
+    return this.run({}, rawArgs);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cli-cordova.open" id="apidoc.module.ember-cli-cordova.open">module ember-cli-cordova.open</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.open.run" id="apidoc.element.ember-cli-cordova.open.run">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.open.</span>run
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">run = function (options) {
+  var platform = options.platform || defaultPlatform(this.project);
+  return require('../tasks/open')(this.project, platform, options.application)();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  works: 'insideProject',
+  allowedCordovaCommands: [
+    'plugin', 'plugins', 'platform', 'platforms', 'run', 'emulate'
+  ],
+
+  validateAndRun: function(rawArgs) {
+    if(this.allowedCordovaCommands.indexOf(rawArgs[0]) &gt; -1) {
+      return this.<span class="apidocCodeKeywordSpan">run</span>({}, rawArgs);
+    }
+  },
+
+  run: function(options, rawArgs) {
+    return require('../tasks/cordova')(rawArgs, this.project)();
+  }
+};
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cli-cordova.prepare" id="apidoc.module.ember-cli-cordova.prepare">module ember-cli-cordova.prepare</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.prepare.run" id="apidoc.element.ember-cli-cordova.prepare.run">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.prepare.</span>run
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">run = function () {
+  var installDeps = runCommand('npm install &amp;&amp; bower install', 'Installing npm and bower dependencies', {
+    cwd: this.project.root
+  });
+
+  // Because of this being parallel. It breaks the logging and it looks like
+  //
+  //   Symlinking ember dir to cordova www...
+  //   Installing npm and bower dependencies...donedone
+  return Promise.all([linkEnv(this.project)(), installDeps()]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  works: 'insideProject',
+  allowedCordovaCommands: [
+    'plugin', 'plugins', 'platform', 'platforms', 'run', 'emulate'
+  ],
+
+  validateAndRun: function(rawArgs) {
+    if(this.allowedCordovaCommands.indexOf(rawArgs[0]) &gt; -1) {
+      return this.<span class="apidocCodeKeywordSpan">run</span>({}, rawArgs);
+    }
+  },
+
+  run: function(options, rawArgs) {
+    return require('../tasks/cordova')(rawArgs, this.project)();
+  }
+};
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cli-cordova.promise" id="apidoc.module.ember-cli-cordova.promise">module ember-cli-cordova.promise</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.promise.promise" id="apidoc.element.ember-cli-cordova.promise.promise">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.</span>promise
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function PromiseExt() {
+  Promise.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.promise.denodeify" id="apidoc.element.ember-cli-cordova.promise.denodeify">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.promise.</span>denodeify
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">denodeify = function () {
+  var fn = RSVP.denodeify.apply(null, arguments);
+  var Constructor = this;
+
+  return function() {
+    return Constructor.resolve(fn.apply(null, arguments));
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+'use strict';
+
+var Promise    = require('../ext/promise');
+var fs         = require('fs-extra');
+var symlink    = Promise.<span class="apidocCodeKeywordSpan">denodeify</span>(fs.symlink);
+var remove     = Promise.denodeify(fs.remove);
+var path       = require('path');
+var chalk      = require('chalk');
+var verifyDist = require('./verify-dist');
+
+module.exports = function(project){
+if(!project) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.promise.filter" id="apidoc.element.ember-cli-cordova.promise.filter">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.promise.</span>filter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filter = function () {
+  return this.resolve(RSVP.filter.apply(null, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  });
+};
+
+PromiseExt.prototype.filter = function(mapFn) {
+  var Constructor = this.constructor;
+
+  return this.then(function(values) {
+    return Constructor.<span class="apidocCodeKeywordSpan">filter</span>(values, mapFn);
+  });
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.promise.hash" id="apidoc.element.ember-cli-cordova.promise.hash">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.promise.</span>hash
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hash = function () {
+  return this.resolve(RSVP.hash.apply(null, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.promise.map" id="apidoc.element.ember-cli-cordova.promise.map">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.promise.</span>map
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">map = function () {
+  return this.resolve(RSVP.map.apply(null, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}, undefined, 'invoke: ' + method + ' with: ' + args);
+};
+
+PromiseExt.prototype.map = function(mapFn) {
+var Constructor = this.constructor;
+
+return this.then(function(values) {
+  return Constructor.<span class="apidocCodeKeywordSpan">map</span>(values, mapFn);
+});
+};
+
+PromiseExt.prototype.filter = function(mapFn) {
+var Constructor = this.constructor;
+
+return this.then(function(values) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cli-cordova.promise.prototype" id="apidoc.module.ember-cli-cordova.promise.prototype">module ember-cli-cordova.promise.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.promise.prototype.constructor" id="apidoc.element.ember-cli-cordova.promise.prototype.constructor">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.promise.prototype.</span>constructor
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function PromiseExt() {
+  Promise.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.promise.prototype.filter" id="apidoc.element.ember-cli-cordova.promise.prototype.filter">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.promise.prototype.</span>filter
+        <span class="apidocSignatureSpan">(mapFn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filter = function (mapFn) {
+  var Constructor = this.constructor;
+
+  return this.then(function(values) {
+    return Constructor.filter(values, mapFn);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  });
+};
+
+PromiseExt.prototype.filter = function(mapFn) {
+  var Constructor = this.constructor;
+
+  return this.then(function(values) {
+    return Constructor.<span class="apidocCodeKeywordSpan">filter</span>(values, mapFn);
+  });
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.promise.prototype.invoke" id="apidoc.element.ember-cli-cordova.promise.prototype.invoke">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.promise.prototype.</span>invoke
+        <span class="apidocSignatureSpan">(method)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">invoke = function (method) {
+  var args = Array.prototype.slice(arguments, 1);
+
+  return this.then(function(value) {
+    return value[method].apply(value, args);
+  }, undefined, 'invoke: ' + method + ' with: ' + args);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.promise.prototype.map" id="apidoc.element.ember-cli-cordova.promise.prototype.map">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.promise.prototype.</span>map
+        <span class="apidocSignatureSpan">(mapFn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">map = function (mapFn) {
+  var Constructor = this.constructor;
+
+  return this.then(function(values) {
+    return Constructor.map(values, mapFn);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}, undefined, 'invoke: ' + method + ' with: ' + args);
+};
+
+PromiseExt.prototype.map = function(mapFn) {
+var Constructor = this.constructor;
+
+return this.then(function(values) {
+  return Constructor.<span class="apidocCodeKeywordSpan">map</span>(values, mapFn);
+});
+};
+
+PromiseExt.prototype.filter = function(mapFn) {
+var Constructor = this.constructor;
+
+return this.then(function(values) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.promise.prototype.returns" id="apidoc.element.ember-cli-cordova.promise.prototype.returns">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.promise.prototype.</span>returns
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">returns = function (value) {
+  return this.then(function() {
+    return value;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cli-cordova.string" id="apidoc.module.ember-cli-cordova.string">module ember-cli-cordova.string</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.string.classify" id="apidoc.element.ember-cli-cordova.string.classify">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.string.</span>classify
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">classify = function (str) {
+  // Have to humanize first so that 'MyApp' doesnt turn into 'Myapp'
+  return str ? _s.classify(_s.humanize(str)) : '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }
+
+  throw new Error('Unable to find an id within your cordova/config.xml');
+}
+
+module.exports = function(project, id) {
+  project.cordovaConfig = {
+    name:  stringUtils.<span class="apidocCodeKeywordSpan">classify</span>(project.name()),
+    id:    id || getComId(project)
+  };
+
+  return project;
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.string.dasherize" id="apidoc.element.ember-cli-cordova.string.dasherize">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.string.</span>dasherize
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dasherize = function (str) {
+  return str ? _s.dasherize(str).replace(/^\-/, '') : '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var _s = require('underscore.string');
+
+module.exports = {
+  decamelize: function(str) {
+    return str ? str.replace(STRING_DECAMELIZE_REGEXP, '$1_$2').toLowerCase() : '';
+  },
+  dasherize: function(str) {
+    return str ? _s.<span class="apidocCodeKeywordSpan">dasherize</span>(str).replace(/^\-/, '') : '';
+  },
+  classify: function(str) {
+    // Have to humanize first so that 'MyApp' doesnt turn into 'Myapp'
+    return str ? _s.classify(_s.humanize(str)) : '';
+  }
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-cordova.string.decamelize" id="apidoc.element.ember-cli-cordova.string.decamelize">
+        function <span class="apidocSignatureSpan">ember-cli-cordova.string.</span>decamelize
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decamelize = function (str) {
+  return str ? str.replace(STRING_DECAMELIZE_REGEXP, '$1_$2').toLowerCase() : '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
